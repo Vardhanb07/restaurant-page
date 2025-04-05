@@ -1,7 +1,5 @@
-import './styles.css'
-
-console.log("test")
-const body = document.querySelector("body")
-const h1 = document.createElement('h1')
-body.appendChild(h1)
-h1.textContent = 'test'
+import "./styles.css"
+import "./fonts/beau-rivage/stylesheet.css"
+import "./fonts/boldnose/stylesheet.css"
+import "./fonts/mea-culpa/stylesheet.css"
+import "./markup.js"
