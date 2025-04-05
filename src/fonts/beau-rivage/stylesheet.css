@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Beau Rivage';
+    src: url('BeauRivage-Regular.woff2') format('woff2'),
+        url('BeauRivage-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
