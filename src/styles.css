@@ -9,7 +9,7 @@ body {
     flex-direction: column;
 }
 .head-div{
-    font-family: 'Mea Culpa';
+    font-family: 'Merriweather 24pt';
     flex: 1 0 0;
     display: flex;
     flex-direction: column;
@@ -18,6 +18,7 @@ body {
 }
 .information-div{
     flex: 4 0 0;
+    display: flex;
 }
 .restaurant-name{
     font-size: 50px;
@@ -26,6 +27,9 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1.5px;
 }
 .navigation {
     display: flex;
@@ -53,7 +57,27 @@ body {
 .navigation > button:active{
     color: rgba(0, 183, 255, 0.959);
 }
-.home{
-    border-right-width: 10px;
-    border-color: black;
+.home-description{
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+.menu-description, .about-description{
+    display: none;
+    padding-top: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.home-description > p, .menu-description > p,  .about-description > p{
+    width: 75%;
+    font-size: 22px;
+    font-family: 'Roboto';
+    word-spacing: 2px;
+}
+.home-description > p::selection, .menu-description > p::selection, .about-description > p::selection{
+    color: rgba(0, 183, 255, 0.959);
 }
