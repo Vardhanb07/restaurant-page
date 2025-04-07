@@ -8,6 +8,9 @@ body {
     height: 100vh;
     flex-direction: column;
 }
+img {
+    border-radius: 4px;
+}
 .head-div{
     font-family: 'Merriweather 24pt';
     flex: 1 0 0;
@@ -65,14 +68,14 @@ body {
     align-items: flex-start;
     margin-top: 60px;
 }
-.menu-description, .about-description{
+.about-description{
     display: none;
     padding-top: 10px;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
-.home-description > p, .menu-description > p,  .about-description > p{
+.home-description > p, .about-description > p{
     width: 75%;
     font-size: 22px;
     font-family: 'Roboto';
@@ -80,4 +83,57 @@ body {
 }
 .home-description > p::selection, .menu-description > p::selection, .about-description > p::selection{
     color: rgba(0, 183, 255, 0.959);
+}
+.menu-description {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+.menu-description > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border : 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dosa-info > div, .chicken-info > div, .idli-info > div, .pongal-info > div{
+    display: flex;
+    flex-direction: column;
+}
+.item-name {
+    flex: 1 0 0;
+}
+.item {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+    letter-spacing: 1.2px;
+    text-decoration-color: rgba(0, 183, 255, 0.959);
+}
+.item + p {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
+}
+.item-price {
+    flex: 1 0 0;
+}
+.price{
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+    letter-spacing: 1.2px;
+    text-decoration-color: rgba(0, 183, 255, 0.959);
+}
+.price + p{
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
 }
