@@ -5,7 +5,7 @@ home.addEventListener('click', () => {
     menuDescription.style.display = 'none'
 })
 menu.addEventListener('click', () => {
-    menuDescription.style.display = 'flex'
+    menuDescription.style.display = 'grid'
     aboutDescription.style.display = 'none'
     homeDescription.style.display = 'none'
 })
