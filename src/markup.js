@@ -2,6 +2,7 @@ import dosaImage from "./images/dosa.jpg"
 import chickenImage from "./images/chicken.jpg"
 import idliImage from "./images/idli.jpg"
 import pongalImage from "./images/pongal.jpeg"
+import githubIcon from "./icons/github.svg"
 const body = document.querySelector('body')
 const headDiv = document.createElement('div')
 body.appendChild(headDiv)
@@ -25,7 +26,7 @@ menu.textContent = 'MENU'
 menu.classList.add('menu')
 export const about = document.createElement('button')
 nav.appendChild(about)
-about.textContent = 'ABOUT'
+about.textContent = 'CONTACT'
 about.classList.add('about')
 //information-div
 const informationDiv = document.createElement('div')
@@ -174,6 +175,77 @@ div.appendChild(outerDiv)
 export const aboutDescription = document.createElement('div')
 aboutDescription.classList.add('about-description')
 informationDiv.appendChild(aboutDescription)
+outerDiv = document.createElement('div')
+outerDiv.classList.add('contact-us')
+innerDiv = document.createElement('div')
+innerDiv.classList.add('contact')
 para = document.createElement('p')
-para.textContent = 'text-about'
-aboutDescription.appendChild(para)
+para.textContent = 'Person'
+innerDiv.appendChild(para)
+let contact = document.createElement('div')
+para = document.createElement('p')
+para.textContent = 'Chef'
+contact.appendChild(para)
+para = document.createElement('p')
+para.textContent = '000-000-0000'
+contact.appendChild(para)
+para = document.createElement('p')
+para.textContent = 'email@email.com'
+contact.appendChild(para)
+innerDiv.appendChild(contact)
+outerDiv.appendChild(innerDiv)
+aboutDescription.appendChild(outerDiv)
+outerDiv = document.createElement('div')
+outerDiv.classList.add('contact-us')
+innerDiv = document.createElement('div')
+innerDiv.classList.add('contact')
+para = document.createElement('p')
+para.textContent = 'Person'
+innerDiv.appendChild(para)
+contact = document.createElement('div')
+para = document.createElement('p')
+para.textContent = 'Manager'
+contact.appendChild(para)
+para = document.createElement('p')
+para.textContent = '000-000-0000'
+contact.appendChild(para)
+para = document.createElement('p')
+para.textContent = 'email@email.com'
+contact.appendChild(para)
+innerDiv.appendChild(contact)
+outerDiv.appendChild(innerDiv)
+aboutDescription.appendChild(outerDiv)
+outerDiv = document.createElement('div')
+outerDiv.classList.add('contact-us')
+innerDiv = document.createElement('div')
+innerDiv.classList.add('contact')
+para = document.createElement('p')
+para.textContent = 'Person'
+innerDiv.appendChild(para)
+contact = document.createElement('div')
+para = document.createElement('p')
+para.textContent = 'Waiter'
+contact.appendChild(para)
+para = document.createElement('p')
+para.textContent = '000-000-0000'
+contact.appendChild(para)
+para = document.createElement('p')
+para.textContent = 'email@email.com'
+contact.appendChild(para)
+innerDiv.appendChild(contact)
+outerDiv.appendChild(innerDiv)
+aboutDescription.appendChild(outerDiv)
+//footer 
+const footer = document.createElement('footer')
+body.appendChild(footer)
+const a = document.createElement('a')
+a.href = 'https://github.com/Vardhanb07/restaurant-page'
+a.target = '_blank'
+const githubImage = document.createElement('img')
+githubImage.classList.add('github-icon')
+githubImage.src = githubIcon
+githubImage.alt = 'github-svg'
+githubImage.setAttribute('height','30')
+githubImage.setAttribute('width', '30')
+a.appendChild(githubImage)
+footer.appendChild(a)
