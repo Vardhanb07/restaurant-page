@@ -75,7 +75,7 @@ img {
     justify-content: center;
     align-items: center;
 }
-.home-description > p, .about-description > p{
+.home-description > p{
     width: 75%;
     font-size: 22px;
     font-family: 'Roboto';
@@ -135,5 +135,38 @@ img {
 .price + p{
     font-family: "Roboto";
     font-size: 20px;
+    font-weight: 700;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 10%;
+}
+.github-icon:hover {
+    rotate: 360deg;
+    transition: rotate 0.28s;
+    height: 40px;
+    width: 40px;
+}
+.about-description {
+    display: none;
+    flex-direction: column;
+    gap : 18px;
+    font-family: "Roboto";
+    margin: 10px;
+}
+.contact-us {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 4px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact > p {
     font-weight: 700;
 }
